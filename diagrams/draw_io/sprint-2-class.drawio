@@ -1,0 +1,100 @@
+<mxfile host="65bd71144e">
+    <diagram name="Sprint 2 - Class" id="0">
+        <mxGraphModel dx="1443" dy="1027" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="e1" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_template" target="cls_criteria" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_criteria" target="cls_sub" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="uses 1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_eval" target="cls_template" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="evaluates 1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_eval" target="cls_agent" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_eval" target="cls_result" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="refs 1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_result" target="cls_sub" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_template" value="EvaluationTemplate" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="80" width="240" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="t1" value="- id: int&#xa;- name: string&#xa;- activity_id: int&#xa;- is_active: bool" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_template" vertex="1">
+                    <mxGeometry y="30" width="240" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_template" vertex="1">
+                    <mxGeometry y="102" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="t2" value="+ getCriteria(): Criteria[]&#xa;+ computeMaxScore(): float&#xa;+ activate(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_template" vertex="1">
+                    <mxGeometry x="-10" y="110" width="240" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_criteria" value="Criteria" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="80" width="220" height="165" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1" value="- id: int&#xa;- name: string&#xa;- weight: float&#xa;- template_id: int&#xa;- order: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_criteria" vertex="1">
+                    <mxGeometry y="30" width="220" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_criteria" vertex="1">
+                    <mxGeometry y="105" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2" value="+ getSubcriteria(): Subcriteria[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_criteria" vertex="1">
+                    <mxGeometry y="130" width="220" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_sub" value="Subcriteria" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="80" width="220" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" value="- id: int&#xa;- label: string&#xa;- weight: float&#xa;- criteria_id: int&#xa;- order: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_sub" vertex="1">
+                    <mxGeometry y="30" width="220" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="s_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_sub" vertex="1">
+                    <mxGeometry y="105" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" value="+ getWeight(): float" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_sub" vertex="1">
+                    <mxGeometry y="105" width="220" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_agent" value="Agent" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="405" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag1" value="- id: int&#xa;- name: string&#xa;- activity_id: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_agent" vertex="1">
+                    <mxGeometry y="30" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_agent" vertex="1">
+                    <mxGeometry y="80" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag2" value="+ getEvaluations(): Evaluation[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_agent" vertex="1">
+                    <mxGeometry y="80" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_eval" value="Evaluation" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="360" width="240" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev1" value="- id: int&#xa;- agent_id: int&#xa;- template_id: int&#xa;- evaluator_id: int&#xa;- total_score: float&#xa;- date: datetime" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_eval" vertex="1">
+                    <mxGeometry y="30" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_eval" vertex="1">
+                    <mxGeometry y="120" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev2" value="+ computeScore(): float&#xa;+ save(): void&#xa;+ getResults(): EvalResult[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_eval" vertex="1">
+                    <mxGeometry y="120" width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_result" value="EvaluationResult" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="380" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="er1" value="- id: int&#xa;- evaluation_id: int&#xa;- subcriteria_id: int&#xa;- notation: enum(C,NC,SI,PC,NE)&#xa;- score: float" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_result" vertex="1">
+                    <mxGeometry y="30" width="220" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_result" vertex="1">
+                    <mxGeometry y="115" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="er2" value="+ computeScore(): float" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_result" vertex="1">
+                    <mxGeometry y="115" width="220" height="35" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

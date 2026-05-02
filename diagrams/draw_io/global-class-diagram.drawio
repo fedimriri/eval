@@ -1,0 +1,202 @@
+<mxfile host="65bd71144e">
+    <diagram name="Global Class Diagram" id="0">
+        <mxGraphModel dx="1010" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="e_user_role" value="has" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="cls_user" target="cls_role" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_admin_user" value="" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=0;" parent="1" source="cls_admin" target="cls_user" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_mgr_user" value="" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=0;" parent="1" source="cls_manager" target="cls_user" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_mgr_bu" value="manages *" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="cls_manager" target="cls_bu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_bu_act" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_bu" target="cls_activity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_act_agent" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_activity" target="cls_agent" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl_crit" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_template" target="cls_criteria" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_crit_sub" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_criteria" target="cls_subcriteria" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_eval_tpl" value="uses 1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_evaluation" target="cls_template" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_eval_agent" value="evaluates 1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_evaluation" target="cls_agent" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_eval_res" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_evaluation" target="cls_evalresult" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_res_sub" value="refs 1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_evalresult" target="cls_subcriteria" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_ai_eval" value="" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=0;" parent="1" source="cls_aieval" target="cls_evaluation" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_ai_groq" value="&lt;&lt;uses&gt;&gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_aieval" target="cls_groq" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_user" value="User" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="250" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="u1" value="- id: int&#xa;- username: string&#xa;- password_hash: string&#xa;- role_id: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_user" vertex="1">
+                    <mxGeometry y="30" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="u_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_user" vertex="1">
+                    <mxGeometry y="90" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="u2" value="+ login(): bool&#xa;+ logout(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_user" vertex="1">
+                    <mxGeometry y="90" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_role" value="Role" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="265" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1" value="- id: int&#xa;- name: string (admin|manager)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_role" vertex="1">
+                    <mxGeometry y="30" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_admin" value="Admin" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="450" width="180" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1" value="+ manageUsers(): void&#xa;+ assignManager(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_admin" vertex="1">
+                    <mxGeometry y="30" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_manager" value="Manager" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="450" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1" value="+ conductEvaluation(): void&#xa;+ viewReports(): void&#xa;+ uploadAudio(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_manager" vertex="1">
+                    <mxGeometry y="30" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_bu" value="BusinessUnit" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="250" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="bu1" value="- id: int&#xa;- name: string&#xa;- description: string" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_bu" vertex="1">
+                    <mxGeometry y="30" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="bu_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_bu" vertex="1">
+                    <mxGeometry y="80" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="bu2" value="+ getActivities(): Activity[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_bu" vertex="1">
+                    <mxGeometry y="80" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_activity" value="Activity" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="970" y="250" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="act1" value="- id: int&#xa;- name: string&#xa;- bu_id: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_activity" vertex="1">
+                    <mxGeometry y="30" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_activity" vertex="1">
+                    <mxGeometry y="80" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="act2" value="+ getAgents(): Agent[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_activity" vertex="1">
+                    <mxGeometry y="80" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_agent" value="Agent" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="1250" y="250" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag1" value="- id: int&#xa;- name: string&#xa;- activity_id: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_agent" vertex="1">
+                    <mxGeometry y="30" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_agent" vertex="1">
+                    <mxGeometry y="80" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag2" value="+ getEvaluations(): Evaluation[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_agent" vertex="1">
+                    <mxGeometry y="80" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_template" value="EvaluationTemplate" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="470" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="t1" value="- id: int&#xa;- name: string&#xa;- activity_id: int&#xa;- is_active: bool" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_template" vertex="1">
+                    <mxGeometry y="30" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_template" vertex="1">
+                    <mxGeometry y="110" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="t2" value="+ getCriteria(): Criteria[]&#xa;+ computeMaxScore(): float" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_template" vertex="1">
+                    <mxGeometry y="110" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_criteria" value="Criteria" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="640" width="200" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1" value="- id: int&#xa;- name: string&#xa;- weight: float&#xa;- template_id: int&#xa;- order: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_criteria" vertex="1">
+                    <mxGeometry y="30" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_criteria" vertex="1">
+                    <mxGeometry y="100" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2" value="+ getSubcriteria(): Subcriteria[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_criteria" vertex="1">
+                    <mxGeometry y="100" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_subcriteria" value="Subcriteria" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="710" width="200" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sc1" value="- id: int&#xa;- label: string&#xa;- weight: float&#xa;- criteria_id: int&#xa;- order: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_subcriteria" vertex="1">
+                    <mxGeometry y="30" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="sc_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_subcriteria" vertex="1">
+                    <mxGeometry y="120" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="sc2" value="+ getWeight(): float" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_subcriteria" vertex="1">
+                    <mxGeometry y="120" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_evaluation" value="Evaluation" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="440" width="220" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev1" value="- id: int&#xa;- agent_id: int&#xa;- template_id: int&#xa;- evaluator_id: int&#xa;- total_score: float&#xa;- date: datetime" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_evaluation" vertex="1">
+                    <mxGeometry y="30" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_evaluation" vertex="1">
+                    <mxGeometry y="140" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev2" value="+ computeScore(): float&#xa;+ save(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_evaluation" vertex="1">
+                    <mxGeometry y="140" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_evalresult" value="EvaluationResult" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="970" y="710" width="200" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="er1" value="- id: int&#xa;- evaluation_id: int&#xa;- subcriteria_id: int&#xa;- notation: enum(C,NC,SI,PC,NE)&#xa;- score: float" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_evalresult" vertex="1">
+                    <mxGeometry y="30" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_evalresult" vertex="1">
+                    <mxGeometry y="110" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="er2" value="+ computeScore(): float" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_evalresult" vertex="1">
+                    <mxGeometry y="110" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_aieval" value="AIEvaluation" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="1230" y="710" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1" value="- transcript: string&#xa;- diarization: json&#xa;- audio_path: string" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_aieval" vertex="1">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_aieval" vertex="1">
+                    <mxGeometry y="80" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2" value="+ transcribeAudio(): string&#xa;+ diarize(): json&#xa;+ evaluateWithAI(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_aieval" vertex="1">
+                    <mxGeometry y="80" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_groq" value="GroqService" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#e6f3ff;strokeColor=#336699;" parent="1" vertex="1">
+                    <mxGeometry x="1270" y="450" width="200" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="gs1" value="- apiKey: string&#xa;- client: GuzzleClient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_groq" vertex="1">
+                    <mxGeometry y="30" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="gs_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_groq" vertex="1">
+                    <mxGeometry y="70" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="gs2" value="+ transcribe(audio): string&#xa;+ chat(messages): string&#xa;+ evaluate(prompt): json" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_groq" vertex="1">
+                    <mxGeometry y="70" width="200" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

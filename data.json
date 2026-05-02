@@ -1,0 +1,614 @@
+{
+    "status": "success",
+    "data": {
+        "results": {
+            "transcript": {
+                "status": "success",
+                "audio_path": "uploads\/audio\/1748440354_683715222d1b7_OUT-9606-0661991265-20241113-123735.mp3",
+                "segments": [
+                    {
+                        "start": 0,
+                        "end": 7,
+                        "text": " Bonjour.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 21.1,
+                        "end": 21.76,
+                        "text": " Bonjour.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 22.3,
+                        "end": 25.62,
+                        "text": " Je suis Em\u00e9nie de Solutions 30, partenaire Orange.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 25.62,
+                        "end": 34.04,
+                        "text": " Je vous appelle concernant votre rendez-vous d'installation de la fibre optique pr\u00e9vue pour demain \u00e0 partir du 11h.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 34.48,
+                        "end": 34.68,
+                        "text": " Oui.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 35.36,
+                        "end": 37.9,
+                        "text": " Je suis bien avec M. Vala \u00e0 Rolge.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 38.4,
+                        "end": 38.76,
+                        "text": " Oui, c'est \u00e7a.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 38.9,
+                        "end": 43.72,
+                        "text": " Habillez-vous quelques minutes \u00e0 m'accorder pour confirmer votre rendez-vous, s'il vous pla\u00eet ?",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 43.72,
+                        "end": 44.34,
+                        "text": " Bon, allons-y.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 45.04,
+                        "end": 49.08,
+                        "text": " Merci. Vous pouvez me confirmer l'adresse, s'il vous pla\u00eet ?",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 49.08,
+                        "end": 55,
+                        "text": " C'est 30-RUSSALVATOR-AMND \u00e0 l'Inter.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 55.62,
+                        "end": 59.12,
+                        "text": " C'est une maison ou bien c'est un appartement ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 59.12,
+                        "end": 59.96,
+                        "text": " C'est un appartement.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 60.5,
+                        "end": 62.04,
+                        "text": " \u00c0 quel \u00e9tage s'il vous pla\u00eet ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 62.04,
+                        "end": 74.82,
+                        "text": " Septi L est d fibr ou c pour la premi fois que vous installez la fibre C la premi fois D Alors le technicien va tirer le coble optique jusqu votre appartement",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 75.14,
+                        "end": 77.26,
+                        "text": " On a un 30 ans avec une d\u00e9j\u00e0 existance.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 77.88,
+                        "end": 81.1,
+                        "text": " Il installe la prise optique et il assure de la qualit\u00e9 du signal.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 81.36,
+                        "end": 84.08,
+                        "text": " Apr\u00e8s, c'est \u00e0 vous juste de brancher les \u00e9quipements. D'accord?",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 84.64,
+                        "end": 85.04,
+                        "text": " Ok.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 86.16,
+                        "end": 90.56,
+                        "text": " La dur\u00e9e de l'intervention entre 2 \u00e0 4 heures selon la complexit\u00e9.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 90.56,
+                        "end": 95.12,
+                        "text": " C'est vous qui allez assister avec le technicien, M. Vallat ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 95.12,
+                        "end": 95.36,
+                        "text": " Non.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 97.08,
+                        "end": 98.82,
+                        "text": " Il y aura une autre personne ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 98.82,
+                        "end": 99.56,
+                        "text": " L'architecte.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 100.88,
+                        "end": 101.54,
+                        "text": " D'accord.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 101.82,
+                        "end": 104.56,
+                        "text": " Et en cas de besoin, il sera joignable sur quel num\u00e9ro ?",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 105.6,
+                        "end": 107.56,
+                        "text": " D\u00e9j\u00e0 rempli, mais je vais vous le redonner.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 109.18,
+                        "end": 111.16,
+                        "text": " L'architecte s'appelle Alix.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 112.1,
+                        "end": 112.4,
+                        "text": " Oui.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 114.4,
+                        "end": 119.96,
+                        "text": " Et alors, 06, 73, 35, 34, 50.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 120.56,
+                        "end": 126.84,
+                        "text": " Tr\u00e8s bien. Est-ce que vous avez demand\u00e9 la portabilit\u00e9 aupr\u00e8s de services clients orange, M. Valla ?",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 126.84,
+                        "end": 127.58,
+                        "text": " Je ne sais pas ce que c'est.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 128.38,
+                        "end": 130.14,
+                        "text": " Garder le num\u00e9ro de t\u00e9l\u00e9phone fixe.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 131.06,
+                        "end": 142.02,
+                        "text": " Non je n pas de t C une premi implantation donc il n a pas de num de t D Alors sinon M Vallat vous avez l au local technique s vous pla",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 142.02,
+                        "end": 143.42,
+                        "text": " L\u00e0, pas sur moi, non.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 144.36,
+                        "end": 148.96,
+                        "text": " Et si je parle du jour de rendez-vous pour demain, vous aurez l'acc\u00e8s pour le technicien ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 148.96,
+                        "end": 150.46,
+                        "text": " Je ne sais pas, j'esp\u00e8re que oui.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 151.38,
+                        "end": 157.02,
+                        "text": " En fait, j'insiste sur ce point, M. Vallat, car si le jour de rendez-vous, le technicien n'arrive pas \u00e0 acc\u00e9der au local technique,",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 157.02,
+                        "end": 159.14,
+                        "text": " \u00e7a sera un d\u00e9placement inutile.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 159.26,
+                        "end": 160.6,
+                        "text": " Il ne pourra pas activer les services.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 161.46,
+                        "end": 164.48,
+                        "text": " Le local technique, c'est l\u00e0 o\u00f9 il y a le bo\u00eetier de la fibre optique",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 164.48,
+                        "end": 165.78,
+                        "text": " qui raccorde tous les meubles.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 166.18,
+                        "end": 167.66,
+                        "text": " \u00c7a se trouve dans les parties communes,",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 167.8,
+                        "end": 170.3,
+                        "text": " g\u00e9n\u00e9ralement au niveau de ce sol ou bien dans la cave.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 171.06,
+                        "end": 171.28,
+                        "text": " OK.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 172.56,
+                        "end": 172.92,
+                        "text": " D'accord.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 173.14,
+                        "end": 175.28,
+                        "text": " Alors, dans votre cas, c'est marqu\u00e9 devant moi.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 176.34,
+                        "end": 179.36,
+                        "text": " Le local technique, \u00e7a se trouve dans le parking.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 180.88,
+                        "end": 181.62,
+                        "text": " Je ne sais pas.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 182.14,
+                        "end": 186,
+                        "text": " Alors, il y a un local technique suppl\u00e9mentaire dans le parking sous le b\u00e2timent.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 187.02,
+                        "end": 189.94,
+                        "text": " Oui, s\u00fbrement. C'est vous qui savez.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 191.24,
+                        "end": 207.17,
+                        "text": " Si vous voulez je peux vous communiquer le num du syndic pour v avec eux et assurer l demain pour le technicien Non merci Vous pouvez assurer l J que oui C mon architecte qui va faire Appelez mon architecte pour voir",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 209.67,
+                        "end": 213.33,
+                        "text": " J'appelle l'architecte pour assurer l'acc\u00e8s au local technique ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 213.33,
+                        "end": 213.55,
+                        "text": " Oui.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 216.37,
+                        "end": 218.67,
+                        "text": " Sur ce num\u00e9ro-l\u00e0 maintenant ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 218.67,
+                        "end": 219.91,
+                        "text": " Le num\u00e9ro que je vous ai donn\u00e9,",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 220.31,
+                        "end": 221.93,
+                        "text": " si vous voulez que je vous redonne ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 221.93,
+                        "end": 224.09,
+                        "text": " Non, non, c'est bien marqu\u00e9 le 0676.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 224.63,
+                        "end": 226.23,
+                        "text": " Oui, \u00e7a c'est super.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 226.23,
+                        "end": 229.41,
+                        "text": " Pour le moment, parce que le rendez-vous, il est bien confirm\u00e9.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 230.07,
+                        "end": 232.09,
+                        "text": " Il reste juste la confirmation de local technique.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 232.25,
+                        "end": 234.79,
+                        "text": " Si vous pouvez m'assurer l'acc\u00e8s, on peut confirmer le rendez-vous.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 235.01,
+                        "end": 235.91,
+                        "text": " Sinon, on laisse comme \u00e7a.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 235.99,
+                        "end": 238.03,
+                        "text": " Vous pouvez v\u00e9rifier et nous rappeler sur ce num\u00e9ro-l\u00e0.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 238.91,
+                        "end": 240.83,
+                        "text": " Non, non, mais on confirme.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 241.61,
+                        "end": 242.49,
+                        "text": " D'accord, tr\u00e8s bien.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 242.63,
+                        "end": 245.49,
+                        "text": " Sinon, en cas de besoin, vous pouvez nous contacter, d'accord ?",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 245.49,
+                        "end": 245.87,
+                        "text": " D'accord.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 246.35,
+                        "end": 249.35,
+                        "text": " Le rendez-vous, il est bien confirm\u00e9 demain \u00e0 partir du 11h.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 249.35,
+                        "end": 252.17,
+                        "text": " Le technicien, vous rappelez 15 minutes avant de passer.",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 252.53,
+                        "end": 255.45,
+                        "text": " Alors, moi, je ne comprends rien, mais...",
+                        "speaker": "AGENT"
+                    },
+                    {
+                        "start": 255.45,
+                        "end": 257.29,
+                        "text": " Oui, oui, sur notre num\u00e9ro, il va appeler.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 257.81,
+                        "end": 258.03,
+                        "text": " OK.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 258.37,
+                        "end": 261.13,
+                        "text": " En cas de besoin, vous pouvez nous rappeler sur ce num\u00e9ro-l\u00e0.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 261.43,
+                        "end": 261.97,
+                        "text": " D'accord ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 261.97,
+                        "end": 262.25,
+                        "text": " Merci.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 262.73,
+                        "end": 263.33,
+                        "text": " Merci beaucoup.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 263.65,
+                        "end": 265.33,
+                        "text": " Vous demandez d'autres questions ?",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 265.33,
+                        "end": 266.51,
+                        "text": " Non, je vous remercie beaucoup, madame.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 266.51,
+                        "end": 267.21,
+                        "text": " Merci beaucoup.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 267.63,
+                        "end": 268.41,
+                        "text": " Merci, M. Valais.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 268.49,
+                        "end": 268.91,
+                        "text": " Bonne journ\u00e9e.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 269.23,
+                        "end": 269.55,
+                        "text": " Au revoir.",
+                        "speaker": "CLIENT"
+                    },
+                    {
+                        "start": 270.05,
+                        "end": 270.37,
+                        "text": " Au revoir.",
+                        "speaker": "CLIENT"
+                    }
+                ]
+            },
+            "evaluation": [
+                {
+                    "subcriteria_id": 33,
+                    "notation": "NC",
+                    "comments": "The agent did not introduce themselves properly as 'assistance Energie', and the client's name was not used consistently throughout the call.",
+                    "criteria_id": 11
+                },
+                {
+                    "subcriteria_id": 34,
+                    "notation": "C",
+                    "comments": "The agent checked if the client had other questions and confirmed the next steps before closing the call.",
+                    "criteria_id": 11
+                },
+                {
+                    "subcriteria_id": 35,
+                    "notation": "C",
+                    "comments": "The agent handled the client's questions and concerns properly, and there were no objections that were not addressed.",
+                    "criteria_id": 11
+                },
+                {
+                    "subcriteria_id": 36,
+                    "notation": "C",
+                    "comments": "The agent's communication was clear, and the exchanges were fluid. The agent directed the call without being too aggressive.",
+                    "criteria_id": 11
+                },
+                {
+                    "subcriteria_id": 37,
+                    "notation": "NC",
+                    "comments": "There is no mention of recording the call or handling personal data according to RGPD guidelines.",
+                    "criteria_id": 12
+                },
+                {
+                    "subcriteria_id": 38,
+                    "notation": "NC",
+                    "comments": "The agent did not collect or verify all necessary client information, such as contact details or specific requirements.",
+                    "criteria_id": 12
+                },
+                {
+                    "subcriteria_id": 39,
+                    "notation": "NC",
+                    "comments": "The transcript does not show the use of specific tools or processes related to the task, making it hard to assess mastery.",
+                    "criteria_id": 12
+                },
+                {
+                    "subcriteria_id": 40,
+                    "notation": "NC",
+                    "comments": "The call was not about presenting an energy offer, but rather confirming an installation appointment. The context doesn't fit the subcriteria.",
+                    "criteria_id": 13
+                },
+                {
+                    "subcriteria_id": 41,
+                    "notation": "NC",
+                    "comments": "Pricing was not discussed during the call as it was not relevant to the appointment confirmation.",
+                    "criteria_id": 13
+                },
+                {
+                    "subcriteria_id": 42,
+                    "notation": "NC",
+                    "comments": "There was no oral agreement for a service or product related to the energy sector; the call was about confirming an installation.",
+                    "criteria_id": 13
+                },
+                {
+                    "subcriteria_id": 43,
+                    "notation": "NC",
+                    "comments": "Payment and billing were not discussed as the call was about an installation appointment, not a service or product sale.",
+                    "criteria_id": 13
+                },
+                {
+                    "subcriteria_id": 44,
+                    "notation": "NC",
+                    "comments": "Legal mentions were not discussed or provided during the call.",
+                    "criteria_id": 13
+                },
+                {
+                    "subcriteria_id": 45,
+                    "notation": "C",
+                    "comments": "The agent recapitulated the confirmation of the installation appointment and the next steps.",
+                    "criteria_id": 13
+                },
+                {
+                    "subcriteria_id": 46,
+                    "notation": "NC",
+                    "comments": "The call was not about detecting a need for an energy service but confirming an installation appointment for fiber optics.",
+                    "criteria_id": 14
+                },
+                {
+                    "subcriteria_id": 47,
+                    "notation": "NC",
+                    "comments": "There was no attempt to upsell or cross-sell any services during the call.",
+                    "criteria_id": 14
+                }
+            ]
+        },
+        "template": {
+            "id": 1,
+            "name": "energie_bu_telco_test"
+        },
+        "language": "fr"
+    }
+}

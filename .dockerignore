@@ -1,0 +1,44 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+README.md
+
+# Logs
+*.log
+error.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE files
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if any)
+node_modules
+
+# Vendor directory (will be installed during build)
+vendor
+
+# Upload directories (should be mounted as volumes)
+uploads/*
+
+# Test files
+test.php
+test2.php
+test.mp3
+
+# Setup scripts
+fedora-setup.sh

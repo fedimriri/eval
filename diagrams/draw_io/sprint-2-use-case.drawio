@@ -1,0 +1,126 @@
+<mxfile host="65bd71144e">
+    <diagram name="Global Use Case" id="0">
+        <mxGraphModel dx="1554" dy="1106" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Sprint 1 -  QA Evaluation System" style="swimlane;startSize=30;fontFamily=Arial;fontSize=16;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="40" width="1130" height="816" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_agents" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e13" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_bu" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_agents" value="Manage Evaluations" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="100" y="150" width="300" height="147" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_bu" value="Manage Templates" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="64" y="448" width="245" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_login" value="Login" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;" parent="2" vertex="1">
+                    <mxGeometry x="942" y="560" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Delete&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Evaluations&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="705" y="250" width="210" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Edit&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Evaluations&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="705" y="150" width="210" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Create&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Evaluations&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="705" y="60" width="210" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=1;" parent="2" source="10" target="uc_manage_agents" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-60" y="282" as="sourcePoint"/>
+                        <mxPoint x="162" y="222" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=1;" parent="2" source="8" target="uc_manage_agents" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="725" y="120" as="sourcePoint"/>
+                        <mxPoint x="384" y="175" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=1;" parent="2" source="9" target="uc_manage_agents" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="735" y="130" as="sourcePoint"/>
+                        <mxPoint x="394" y="185" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="Create&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Templates&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="391" y="608" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Edit&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Templates&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="95" y="698" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Delete Templates" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="298" y="689" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=1;" parent="2" source="47" target="uc_manage_bu" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="897" y="788" as="sourcePoint"/>
+                        <mxPoint x="409" y="1072" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=1;" parent="2" source="49" target="uc_manage_bu" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="887" y="778" as="sourcePoint"/>
+                        <mxPoint x="497" y="1072" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=1;" parent="2" source="48" target="uc_manage_bu" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="897" y="788" as="sourcePoint"/>
+                        <mxPoint x="450" y="1070" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="consult&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Evaluations&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="2">
+                    <mxGeometry x="705" y="340" width="210" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=1;" edge="1" parent="2" source="63" target="uc_manage_agents">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="727" y="279" as="sourcePoint"/>
+                        <mxPoint x="379" y="216" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="&amp;lt;extends&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" edge="1" parent="2" source="66" target="47">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="898" y="876" as="sourcePoint"/>
+                        <mxPoint x="959" y="618" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="add criteria / subcriteria" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="2">
+                    <mxGeometry x="680" y="623" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-13" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7" target="rdVzw9YY1r8efDyDZuLF-10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="112.99999999999977" as="sourcePoint"/>
+                        <mxPoint x="189.9999999999999" y="-147" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#cdeb8b;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="595" width="60" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-10" value="Manager&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffcc99;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="270" width="60" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="rdVzw9YY1r8efDyDZuLF-10" target="uc_manage_agents" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-67.09713061230627" as="sourcePoint"/>
+                        <mxPoint x="460" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-22" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="7" target="uc_manage_bu" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="630" as="sourcePoint"/>
+                        <mxPoint x="458" y="735" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

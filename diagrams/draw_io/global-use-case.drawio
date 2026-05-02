@@ -1,0 +1,133 @@
+<mxfile host="65bd71144e">
+    <diagram name="Global Use Case" id="0">
+        <mxGraphModel dx="1554" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="QA Evaluation System" style="swimlane;startSize=30;fontFamily=Arial;fontSize=16;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="40" width="1130" height="1030" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_agents" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_evaluation" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_generate_reports" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_users" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_bu" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e14" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_activities" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e15" value="&amp;lt;includes&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_manage_templates" target="uc_login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e17" value="&amp;lt;extends&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=11;endArrow=open;" parent="2" source="uc_ai_service" target="uc_manage_evaluation" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_agents" value="Manage Agents" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="140" y="280" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_evaluation" value="Manage Evaluation" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="140" y="160" width="320" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_generate_reports" value="Generate Reports" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#ffcc99;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="150" y="390" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_users" value="Manage Users" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="150" y="570" width="280" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_bu" value="Manage Business Units" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="150" y="690" width="360" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_activities" value="Manage Activities" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="150" y="810" width="320" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_manage_templates" value="Manage Templates" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=#cdeb8b;strokeColor=#36393d;" parent="2" vertex="1">
+                    <mxGeometry x="150" y="930" width="320" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_ai_service" value="AI Evaluation" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fillColor=light-dark(#b1ddf0, #1d293b);strokeColor=#6c8ebf;" parent="2" vertex="1">
+                    <mxGeometry x="530" y="50" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc_login" value="Login" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;" parent="2" vertex="1">
+                    <mxGeometry x="940" y="510" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-13" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7" target="rdVzw9YY1r8efDyDZuLF-10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="112.99999999999977" as="sourcePoint"/>
+                        <mxPoint x="189.9999999999999" y="-147" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#cdeb8b;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="780" width="60" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-10" value="Manager&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffcc99;strokeColor=#36393d;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="270" width="60" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="rdVzw9YY1r8efDyDZuLF-10" target="uc_manage_evaluation" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-57.53574035605857" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e8" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="rdVzw9YY1r8efDyDZuLF-10" target="uc_ai_service" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-70.40965001026825" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="470" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e3" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="rdVzw9YY1r8efDyDZuLF-10" target="uc_generate_reports" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-46.358625114606184" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-18" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="7" target="uc_manage_activities" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160" y="620" as="sourcePoint"/>
+                        <mxPoint x="448" y="725" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-21" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="7" target="uc_manage_users" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="630" as="sourcePoint"/>
+                        <mxPoint x="458" y="735" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-22" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="7" target="uc_manage_bu" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="630" as="sourcePoint"/>
+                        <mxPoint x="458" y="735" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-23" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="7" target="uc_manage_templates" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="630" as="sourcePoint"/>
+                        <mxPoint x="546" y="862" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-26" value="&lt;span style=&quot;background-color: light-dark(rgb(177, 221, 240), rgb(237, 237, 237));&quot;&gt;«system»&lt;br&gt;&lt;b style=&quot;&quot;&gt;AI Agent&amp;nbsp;&lt;/b&gt;&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+                    <mxGeometry x="1460" y="295" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="rdVzw9YY1r8efDyDZuLF-27" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="rdVzw9YY1r8efDyDZuLF-26" target="uc_ai_service" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="341" as="sourcePoint"/>
+                        <mxPoint x="509" y="446" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;endFill=0;" parent="1" source="rdVzw9YY1r8efDyDZuLF-10" target="uc_manage_agents" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="341" as="sourcePoint"/>
+                        <mxPoint x="509" y="446" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

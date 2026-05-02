@@ -1,0 +1,58 @@
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php_app
+    volumes:
+      - ./:/var/www/html
+      - ./uploads:/var/www/html/uploads
+    working_dir: /var/www/html
+    ports:
+      - "8090:80"
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: eval_db
+      MYSQL_USER: eval_user
+      MYSQL_PASSWORD: eval_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "8081:80"
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+
+
+volumes:
+  mysql_data:
+
+networks:
+  default:
+    driver: bridge

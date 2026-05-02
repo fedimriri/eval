@@ -1,0 +1,112 @@
+<mxfile host="65bd71144e">
+    <diagram name="Sprint 3 - Class" id="0">
+        <mxGraphModel dx="1554" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="e1" value="" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=block;endFill=0;" parent="1" source="cls_aieval" target="cls_eval" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="1         1..*" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;startArrow=diamondThin;startFill=1;" parent="1" source="cls_eval" target="cls_result" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="uses 1" style="edgeStyle=none;curved=0;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_eval" target="cls_template" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="&amp;lt;acess&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_report" target="cls_eval" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="&amp;lt;use&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_exporter" target="cls_report" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_eval" value="Evaluation" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="70" width="240" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev1" value="- id: int&#xa;- agent_id: int&#xa;- template_id: int&#xa;- evaluator_id: int&#xa;- total_score: float&#xa;- date: datetime" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_eval" vertex="1">
+                    <mxGeometry y="30" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_eval" vertex="1">
+                    <mxGeometry y="130" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev2" value="+ computeScore(): float&#xa;+ save(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_eval" vertex="1">
+                    <mxGeometry y="138" width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_aieval" value="AIEvaluation" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="360" width="240" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1" value="- transcript: string&#xa;- diarization: json&#xa;- audio_path: string&#xa;- groq_model: string" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_aieval" vertex="1">
+                    <mxGeometry y="30" width="240" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_aieval" vertex="1">
+                    <mxGeometry y="100" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2" value="+ transcribeAudio(): string&#xa;+ diarize(): json&#xa;+ evaluateWithAI(): void&#xa;+ persistResults(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_aieval" vertex="1">
+                    <mxGeometry y="100" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_result" value="EvaluationResult" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="95" width="220" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="er1" value="- id: int&#xa;- evaluation_id: int&#xa;- subcriteria_id: int&#xa;- notation: enum&#xa;- score: float" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_result" vertex="1">
+                    <mxGeometry y="30" width="220" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="er_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_result" vertex="1">
+                    <mxGeometry y="105" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="er2" value="+ computeScore(): float" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_result" vertex="1">
+                    <mxGeometry y="105" width="220" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_template" value="EvaluationTemplate" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="360" width="220" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="t1" value="- id: int&#xa;- name: string&#xa;- activity_id: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_template" vertex="1">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_template" vertex="1">
+                    <mxGeometry y="80" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="t2" value="+ getCriteria(): Criteria[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_template" vertex="1">
+                    <mxGeometry y="80" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_report" value="ReportService" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="95" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1" value="- filters: array&#xa;- dateRange: DateRange" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_report" vertex="1">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_report" vertex="1">
+                    <mxGeometry y="80" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2" value="+ aggregateScores(): array&#xa;+ getByAgent(): array&#xa;+ getByBU(): array&#xa;+ getByActivity(): array" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_report" vertex="1">
+                    <mxGeometry y="80" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_exporter" value="ExportService" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="400" width="220" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex1" value="- spreadsheet: PhpSpreadsheet&#xa;- pdf: mPDF" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_exporter" vertex="1">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_exporter" vertex="1">
+                    <mxGeometry y="80" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex2" value="+ exportXLSX(data): File&#xa;+ exportPDF(data): File&#xa;+ download(): Response" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_exporter" vertex="1">
+                    <mxGeometry y="80" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_groq" value="GroqService" style="swimlane;startSize=30;fontFamily=Arial;fontSize=14;fontStyle=1;fillColor=#e6f3ff;strokeColor=#336699;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="370" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="gs1" value="- apiKey: string&#xa;- client: GuzzleClient&#xa;- model: string" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_groq" vertex="1">
+                    <mxGeometry y="30" width="220" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="gs_sep" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="cls_groq" vertex="1">
+                    <mxGeometry y="85" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="gs2" value="+ transcribe(audio): string&#xa;+ chat(messages): string&#xa;+ evaluate(prompt): json" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontFamily=Arial;fontSize=13;spacingLeft=8;" parent="cls_groq" vertex="1">
+                    <mxGeometry y="85" width="220" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="&amp;lt;use&amp;gt;" style="edgeStyle=none;curved=0;dashed=1;html=1;fontFamily=Arial;fontSize=12;endArrow=open;" parent="1" source="cls_aieval" target="cls_groq" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

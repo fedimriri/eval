@@ -1,0 +1,11 @@
+node_modules
+vendor
+package-lock.json
+package.json
+uploads
+logs
+error.log
+json
+.agents
+.github
+*.bkp
